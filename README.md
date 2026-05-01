@@ -17,14 +17,21 @@ I am a Python developer focused on Backend Engineering and AI. I build reliable 
 
 ### 🚀 Featured Engineering Projects
 
-#### 1. 🎟️ [BookFast API](https://github.com/Aman00240/BOOKFAST)
+#### 1. [AI Resume Analyzer](https://github.com/Aman00240/RESUME_SCANNER)
+**Automated RAG-Based Screening System**
+An intelligent document-parsing and evaluation API that deterministically scores candidates against job descriptions.
+* **Core Problem:** Manual resume screening is slow, highly subjective, and standard keyword parsers often fail to understand true technical context.
+* **Solution:** Architected a Retrieval-Augmented Generation (RAG) pipeline utilizing **ChromaDB** for semantic search, and implemented **Instructor/Pydantic** to force the LLM into outputting strict, hallucination-free JSON decisions (Match/Reject).
+* **Key Tech:** Python, FastAPI, ChromaDB, Groq LLM, RAG, Streamlit.
+
+#### 2.[BookFast API](https://github.com/Aman00240/BOOKFAST)
 **High-Concurrency Ticketing System**
 A robust booking API designed to handle race conditions during high-demand events.
 * **Core Problem:** Preventing "double-booking" when thousands of users hit the endpoint simultaneously.
 * **Solution:** Implemented **Atomic Transactions** and database locking strategies to guarantee inventory consistency.
 * **Key Tech:** FastAPI, PostgreSQL, JWT Authentication, Docker Compose.
 
-#### 2. 🧾 [AI Receipt Parser](https://github.com/Aman00240/RECEIPT-PARSER)
+#### 3.[AI Receipt Parser](https://github.com/Aman00240/RECEIPT-PARSER)
 **Structured Data Extraction Pipeline**
 A vision-based tool that transforms unstructured receipt images data into strict, validated JSON.
 * **Core Problem:** Manual data entry from receipts is time-consuming and prone to typos/human error.
@@ -32,12 +39,10 @@ A vision-based tool that transforms unstructured receipt images data into strict
 * **Key Tech:** Llama Vision (via Groq), Python, Pydantic.
 
 ---
-
-### 🔭 Current Research & Development
-I am currently working on **Retrieval Augmented Generation (RAG)** systems to bridge the gap between LLMs and private data.
-* **Active Experiment:** Building a "Chat with your PDF" engine using **Vector Embeddings** and **ChromaDB**.
-* **Goal:** Optimizing chunking strategies to improve retrieval accuracy for semantic search.
-
+### Current Research & Development
+I am currently transitioning from standard RAG pipelines to building autonomous, stateful AI agents.
+* **Active Experiment:** Developing a multi-tool autonomous agent using **LangGraph**, **Python (AsyncIO)**, and local **SQLite** persistence.
+* **Goal:** Building an end-to-end "Coder Agent" capable of dynamic web searching, real-time web scraping, and local file system execution.
 ---
 
 ### 📫 Connect
